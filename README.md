@@ -1,4 +1,8 @@
 # Sandbox
 Active Development, Project Log  
-
-![Screenshot](https://github.com/OpenV2K/Sandbox/blob/main/Screenshot%20From%202026-07-22%2017-54-04.png?raw=true)
+  
+July 23rd 2026:  
+![Screenshot2](https://github.com/OpenV2K/Sandbox/blob/main/Screenshot%20From%202026-07-23%2014-07-45.png?raw=true)
+  
+Meatspace Workstation Setup:  
+![Screenshot3](https://github.com/OpenV2K/Sandbox/blob/main/workstation_photo_07_23_2026.png?raw=true)
