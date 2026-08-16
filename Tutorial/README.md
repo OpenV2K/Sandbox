@@ -1,7 +1,14 @@
-Introduction to the software stack, understanding the signal chain, using the GUI.  
+**Installation: *Environment Setup***  
+1. Install Ubuntu 26.04:  
+   https://ubuntu.com/desktop/docs/en/latest/tutorial/install-ubuntu-desktop/
+2. Download OpenV2K Python app:  
+   https://raw.githubusercontent.com/OpenV2K/Sandbox/refs/heads/main/OpenV2K###.py  
+4. Open Terminal, Navigate to Downloads folder, Execute with Python:  
+   ```user@MachineName:~/Downloads$ python3 OpenV2K###.py```
+6. Install dependencies: on first run, you'll be prompted to install prerequisites.
   
+**GUI Introduction: *Understanding the Signal Chain***  
 When you generate a spectrogram, you're seeing what **would-have-been** output via SDR.  
-  
 There are four functional modes. The signal always logically flows from GUI top to GUI bottom.  
   
 | Input: eSpeak TTS,<br>Output: Generate Spectrogram                                                       | Input: Live Microphone,<br>Output: Generate Spectrogram                                                      | Input: eSpeak TTS,<br>Output: SDR Pulse Modulation                                                 | Input: Live Microphone,<br>Output: SDR Pulse Modulation                                                |
