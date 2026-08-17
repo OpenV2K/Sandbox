@@ -13,6 +13,7 @@
    ```sudo apt install mbrola mbrola-us1```
 6. Optional: Install All International MBROLA Voice Packs:  
    ```See terminal dependency check for bulk install sudo command```
+<br>
   
 **GUI Introduction: *Understanding the Signal Chain***  
 When you generate a spectrogram, you're seeing what **would-have-been** output via SDR.  
