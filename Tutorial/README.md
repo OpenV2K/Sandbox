@@ -2,8 +2,10 @@
 1. Install Ubuntu 26.04:  
    https://ubuntu.com/desktop/docs/en/latest/tutorial/install-ubuntu-desktop/
 2. Download OpenV2K Python app:  
-   https://raw.githubusercontent.com/OpenV2K/Sandbox/refs/heads/main/OpenV2K###.py  
-4. Open Terminal, Navigate to Downloads folder, Execute with Python:  
+   https://raw.githubusercontent.com/OpenV2K/Sandbox/refs/heads/main/OpenV2K###.py
+3. Download Language Translations XML file:  
+   https://raw.githubusercontent.com/OpenV2K/Sandbox/refs/heads/main/Translations.xml
+5. Open Terminal, Navigate to Downloads folder, Execute with Python:  
    ```user@MachineName:~/Downloads$ python3 OpenV2K###.py```
 6. Install dependencies: on first run, you'll be prompted to install prerequisites.
   
