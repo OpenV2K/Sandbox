@@ -8,12 +8,8 @@
 4. Open Terminal, Navigate to Downloads folder, Execute with Python:  
    ```user@MachineName:~/Downloads$ python3 OpenV2K###.py```
 5. Install dependencies: First app run, you'll be prompted to install required packages:  
-   ```sudo apt install gnuradio```  
-   ```sudo apt install gr-osmosdr```  
-   ```sudo apt install python3-pyqt5```  
-   ```sudo apt install python3-numpy```  
+   ```sudo apt install gnuradio gr-osmosdr hackrf python3-pyqt5 python3-numpy espeak-ng```  
    ```pip3 install matplotlib --break-system-packages```  
-   ```sudo apt install espeak-ng```  
    ```sudo apt install mbrola mbrola-us1```  
   
 **GUI Introduction: *Understanding the Signal Chain***  
