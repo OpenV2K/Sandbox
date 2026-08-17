@@ -10,7 +10,9 @@
 5. Install dependencies: First app run, you'll be prompted to install required packages:  
    ```sudo apt install gnuradio gr-osmosdr hackrf python3-pyqt5 python3-numpy espeak-ng```  
    ```pip3 install matplotlib --break-system-packages```  
-   ```sudo apt install mbrola mbrola-us1```  
+   ```sudo apt install mbrola mbrola-us1```
+6. Optional: Install All International MBROLA Voice Packs:  
+   ```See terminal dependency check for bulk install sudo command```
   
 **GUI Introduction: *Understanding the Signal Chain***  
 When you generate a spectrogram, you're seeing what **would-have-been** output via SDR.  
