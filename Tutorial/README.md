@@ -2,11 +2,11 @@
 1. Install Ubuntu 26.04:  
    https://ubuntu.com/desktop/docs/en/latest/tutorial/install-ubuntu-desktop/
 2. Download OpenV2K Python app:  
-   https://raw.githubusercontent.com/OpenV2K/Sandbox/refs/heads/main/OpenV2K###.py
+   https://raw.githubusercontent.com/OpenV2K/Sandbox/refs/heads/main/OpenV2K159.py
 3. Optional: Download Language Translations XML file:  
    https://raw.githubusercontent.com/OpenV2K/Sandbox/refs/heads/main/Translations.xml
 4. Open Terminal, Navigate to Downloads folder, Execute with Python:  
-   ```user@MachineName:~/Downloads$ python3 OpenV2K###.py```
+   ```user@MachineName:~/Downloads$ python3 OpenV2K159.py```
 5. Install dependencies: First app run, you'll be prompted to install required packages:  
    ```sudo apt install gnuradio gr-osmosdr hackrf python3-pyqt5 python3-numpy espeak-ng```  
    ```pip3 install matplotlib --break-system-packages```  
