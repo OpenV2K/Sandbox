@@ -11,7 +11,7 @@
    ```sudo apt install gnuradio gr-osmosdr hackrf python3-pyqt5 python3-numpy espeak-ng```  
    ```pip3 install matplotlib --break-system-packages```  
    ```sudo apt install mbrola mbrola-us1```
-6. Optional: Install All International MBROLA Voice Packs:  
+6. Optional: Install All International [MBROLA](https://github.com/numediart/MBROLA) Voice Packs:  
    ```See terminal dependency check for bulk install sudo command```
 <br>
   
