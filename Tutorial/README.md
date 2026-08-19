@@ -26,3 +26,7 @@ There are four functional modes. The signal always logically flows from GUI top 
   
 # Academic OpenV2K Project Summary
 https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/Academic_OpenV2K_Project_Summary.md  
+<br>
+
+# Degrees Required to Understand the OpenV2K Software Stack
+https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/OpenV2K_Academic_Degree_Map.md
