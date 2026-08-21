@@ -24,9 +24,13 @@ There are four functional modes. The signal always logically flows from GUI top 
 | <img src="https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/1TTSToDiskSpectrogram.png" width="220"/> | <img src="https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/2LiveMicToDiskSpectrogram.png" width="220"/> | <img src="https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/4TTSToSDROutput.png" width="220"/> | <img src="https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/3LiveMicToSDROutput.png" width="220"/> |
 <br>
   
+# What This Actually Is, For a Home User
+https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/OpenV2K_Home_User_Intro.md  
+<br>
+  
 # Academic OpenV2K Project Summary
 https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/Academic_OpenV2K_Project_Summary.md  
 <br>
-
+  
 # Degrees Required to Comprehend the OpenV2K Software Stack
 https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/OpenV2K_Academic_Degree_Map.md
