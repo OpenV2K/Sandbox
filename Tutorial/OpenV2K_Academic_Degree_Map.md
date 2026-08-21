@@ -1,4 +1,4 @@
-# Academic Degrees Required to Fully Comprehend the OpenV2K Software Stack
+# Degrees Required to Fully Comprehend OpenV2K Software
 
 ## Framing
 
