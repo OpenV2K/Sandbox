@@ -32,5 +32,5 @@ https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/OpenV2K_Home_User_Intro.md
 https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/Academic_OpenV2K_Project_Summary.md  
 <br>
   
-# Degrees Required to Comprehend the OpenV2K Software Stack
+# Degrees Required to Comprehend the OpenV2K Software
 https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/OpenV2K_Academic_Degree_Map.md
