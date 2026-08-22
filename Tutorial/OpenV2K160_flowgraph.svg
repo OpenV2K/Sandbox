@@ -1,0 +1,354 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1390" viewBox="0 0 1520 1390" font-family="DejaVu Sans, Verdana, Helvetica, sans-serif">
+<defs>
+<pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.9" fill="#d6d6d6"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9 Z" fill="#000000"/></marker>
+<marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L9 5 L0 9 Z" fill="#7A7A7A"/></marker>
+</defs>
+<rect width="1520" height="1390" fill="#ffffff"/>
+<rect width="1520" height="1390" fill="url(#dots)"/>
+<path d="M268,170 L282,170" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M268,190 L274,190 L274,44 L282,44" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M268,310 L282,310" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M508,170 L522,170" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M508,310 L515,310 L515,192 L522,192" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M748,170 L762,170" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M988,170 L1002,170" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M1228,170 L1242,170" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M1468,170 L1480,170 L1480,500 L30,500 L30,580 L42,580" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M268,580 L282,580" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M508,580 L522,580" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M748,580 L762,580" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M988,580 L1002,580" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M1228,580 L1242,580" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M1468,580 L1480,580 L1480,690 L30,690 L30,760 L42,760" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M268,760 L282,760" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M508,760 L522,760" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M748,760 L762,760" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M988,760 L1002,760" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M1228,760 L1242,760" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M1468,760 L1480,760 L1480,870 L30,870 L30,940 L42,940" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M268,940 L282,940" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M508,940 L522,940" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M748,940 L762,940" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M748,940 L754,940 L754,1035 L1230,1035 L1230,980 L1242,980" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M988,940 L1002,940" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M1228,940 L1250,940 L1250,1075 L505,1075 L505,1120 L522,1120" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M268,1120 L480,1120 L480,1142 L522,1142" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M748,1120 L762,1120" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M748,1120 L754,1120 L754,1260 L762,1260" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M988,1120 L1002,1120" fill="none" stroke="#000000" stroke-width="1.8"  marker-end="url(#ar)"/>
+<path d="M155,400 L155,371" fill="none" stroke="#7A7A7A" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arg)"/>
+<rect x="60" y="400" width="190" height="58" rx="3" fill="#FAFAFA" stroke="#7A7A7A" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="155" y="424" font-size="12" font-style="italic" fill="#7A7A7A" text-anchor="middle">espeak-ng + MBROLA</text>
+<text x="155" y="442" font-size="10.5" font-style="italic" fill="#7A7A7A" text-anchor="middle">subprocess writes the WAV</text>
+<rect x="60" y="24" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="155" y="42" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Options</text>
+<text x="68" y="60" font-size="10.5" fill="#222">Title: OpenV2K 160</text>
+<text x="68" y="75" font-size="10.5" fill="#222">Output Language: Python</text>
+<text x="68" y="90" font-size="10.5" fill="#222">Generate Options: QT GUI</text>
+<rect x="300" y="24" width="190" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="395" y="42" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Probe Avg Mag^2</text>
+<text x="308" y="60" font-size="10.5" fill="#222">ID: level_probe</text>
+<text x="308" y="75" font-size="10.5" fill="#222">Alpha: 1e-3</text>
+<rect x="282" y="36" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="291" y="47" font-size="8" fill="#111" text-anchor="middle">in</text>
+<text x="302" y="102" font-size="10" font-style="italic" fill="#7A7A7A">Qt input level meter</text>
+<rect x="520" y="24" width="165" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="602" y="42" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Variable</text>
+<text x="528" y="60" font-size="10.5" fill="#222">ID: samp_rate</text>
+<text x="528" y="75" font-size="10.5" fill="#222">Value: 48k</text>
+<rect x="710" y="24" width="165" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="792" y="42" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Variable</text>
+<text x="718" y="60" font-size="10.5" fill="#222">ID: pulse_us</text>
+<text x="718" y="75" font-size="10.5" fill="#222">Value: 100</text>
+<rect x="900" y="24" width="165" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="982" y="42" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Variable</text>
+<text x="908" y="60" font-size="10.5" fill="#222">ID: tx_freq</text>
+<text x="908" y="75" font-size="10.5" fill="#222">Value: 1.3G</text>
+<rect x="1090" y="24" width="165" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="1172" y="42" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Variable</text>
+<text x="1098" y="60" font-size="10.5" fill="#222">ID: hackrf_rate</text>
+<text x="1098" y="75" font-size="10.5" fill="#222">Value: 2M</text>
+<rect x="1280" y="24" width="165" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="1362" y="42" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Variable</text>
+<text x="1288" y="60" font-size="10.5" fill="#222">ID: amplitude</text>
+<text x="1288" y="75" font-size="10.5" fill="#222">Value: 0.5</text>
+<rect x="60" y="150" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="155" y="168" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Audio Source</text>
+<text x="68" y="186" font-size="10.5" fill="#222">Device Name:</text>
+<text x="68" y="201" font-size="10.5" fill="#222">Sample Rate: 48k</text>
+<text x="68" y="216" font-size="10.5" fill="#222">OK to Block: Yes</text>
+<rect x="250" y="162" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="259" y="173" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="300" y="150" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="395" y="168" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Multiply Const</text>
+<text x="308" y="186" font-size="10.5" fill="#222">ID: mic_gate</text>
+<text x="308" y="201" font-size="10.5" fill="#222">Constant: 0 / 1</text>
+<text x="308" y="216" font-size="10.5" fill="#222">Type: float</text>
+<rect x="282" y="162" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="291" y="173" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="490" y="162" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="499" y="173" font-size="8" fill="#111" text-anchor="middle">out</text>
+<text x="302" y="243" font-size="10" font-style="italic" fill="#7A7A7A">Live Microphone toggle</text>
+<rect x="540" y="150" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="635" y="168" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Add</text>
+<text x="548" y="186" font-size="10.5" fill="#222">Type: float</text>
+<text x="548" y="201" font-size="10.5" fill="#222">Num Inputs: 2</text>
+<text x="548" y="216" font-size="10.5" fill="#222">Vec Length: 1</text>
+<rect x="522" y="162" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="531" y="173" font-size="8" fill="#111" text-anchor="middle">in0</text>
+<rect x="522" y="184" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="531" y="195" font-size="8" fill="#111" text-anchor="middle">in1</text>
+<rect x="730" y="162" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="739" y="173" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="780" y="150" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="875" y="168" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Multiply Const</text>
+<text x="788" y="186" font-size="10.5" fill="#222">ID: mute_gate</text>
+<text x="788" y="201" font-size="10.5" fill="#222">Constant: 0 / 1</text>
+<text x="788" y="216" font-size="10.5" fill="#222">Type: float</text>
+<rect x="762" y="162" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="771" y="173" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="970" y="162" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="979" y="173" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="1020" y="150" width="190" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="1115" y="168" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">DC Blocker</text>
+<text x="1028" y="186" font-size="10.5" fill="#222">Sample Rate: 48k</text>
+<text x="1028" y="201" font-size="10.5" fill="#222">fb tap: +0.999</text>
+<rect x="1002" y="162" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1011" y="173" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="1210" y="162" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1219" y="173" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="1260" y="150" width="190" height="64" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="1355" y="168" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Notch Filter</text>
+<text x="1268" y="186" font-size="10.5" fill="#222">Sample Rate: 48k</text>
+<text x="1268" y="201" font-size="10.5" fill="#222">Notch: 50 / 60 Hz</text>
+<rect x="1242" y="162" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1251" y="173" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="1450" y="162" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1459" y="173" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="60" y="290" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="155" y="308" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">WAV File Source</text>
+<text x="68" y="326" font-size="10.5" fill="#222">File: openv2k_espeak.wav</text>
+<text x="68" y="341" font-size="10.5" fill="#222">Repeat: Yes</text>
+<text x="68" y="356" font-size="10.5" fill="#222">Type: float</text>
+<rect x="250" y="302" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="259" y="313" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="300" y="290" width="190" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="395" y="308" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Multiply Const</text>
+<text x="308" y="326" font-size="10.5" fill="#222">ID: espeak_gate</text>
+<text x="308" y="341" font-size="10.5" fill="#222">Constant: 1 / 0</text>
+<rect x="282" y="302" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="291" y="313" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="490" y="302" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="499" y="313" font-size="8" fill="#111" text-anchor="middle">out</text>
+<text x="302" y="368" font-size="10" font-style="italic" fill="#7A7A7A">eSpeak TTS toggle</text>
+<rect x="60" y="560" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="155" y="578" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">High Pass Filter</text>
+<text x="68" y="596" font-size="10.5" fill="#222">Cutoff Freq: 100 Hz</text>
+<text x="68" y="611" font-size="10.5" fill="#222">Transition: 50 Hz</text>
+<text x="68" y="626" font-size="10.5" fill="#222">Window: Hamming</text>
+<rect x="42" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="51" y="583" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="250" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="259" y="583" font-size="8" fill="#111" text-anchor="middle">out</text>
+<text x="62" y="653" font-size="10" font-style="italic" fill="#7A7A7A">HPF slider</text>
+<rect x="300" y="560" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="395" y="578" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Low Pass Filter</text>
+<text x="308" y="596" font-size="10.5" fill="#222">Cutoff Freq: 2300 Hz</text>
+<text x="308" y="611" font-size="10.5" fill="#222">Transition: 200 Hz</text>
+<text x="308" y="626" font-size="10.5" fill="#222">Window: Hamming</text>
+<rect x="282" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="291" y="583" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="490" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="499" y="583" font-size="8" fill="#111" text-anchor="middle">out</text>
+<text x="302" y="653" font-size="10" font-style="italic" fill="#7A7A7A">LPF slider</text>
+<rect x="540" y="560" width="190" height="79" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="635" y="578" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Decimating FIR Filter</text>
+<text x="548" y="596" font-size="10.5" fill="#222">ID: f1_bandpass</text>
+<text x="548" y="611" font-size="10.5" fill="#222">Band: 300 - 900 Hz</text>
+<text x="548" y="626" font-size="10.5" fill="#222">Taps: [1.0] bypassed</text>
+<rect x="522" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="531" y="583" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="730" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="739" y="583" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="780" y="560" width="190" height="64" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="875" y="578" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Fricative Suppressor</text>
+<text x="788" y="596" font-size="10.5" fill="#222">ZCR lo / hi: 0.08 / 0.25</text>
+<text x="788" y="611" font-size="10.5" fill="#222">Min Gain: 0.15</text>
+<rect x="762" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="771" y="583" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="970" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="979" y="583" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="1020" y="560" width="190" height="64" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="1115" y="578" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Decimating FIR Filter</text>
+<text x="1028" y="596" font-size="10.5" fill="#222">ID: pre_emph</text>
+<text x="1028" y="611" font-size="10.5" fill="#222">Taps: [1.0] bypassed</text>
+<rect x="1002" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1011" y="583" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="1210" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1219" y="583" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="1260" y="560" width="190" height="64" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="1355" y="578" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">IIR Filter</text>
+<text x="1268" y="596" font-size="10.5" fill="#222">ID: de_emph</text>
+<text x="1268" y="611" font-size="10.5" fill="#222">fb taps: [0.0] bypassed</text>
+<rect x="1242" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1251" y="583" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="1450" y="572" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1459" y="583" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="60" y="740" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="155" y="758" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">AGC</text>
+<text x="68" y="776" font-size="10.5" fill="#222">Rate: 1e-4</text>
+<text x="68" y="791" font-size="10.5" fill="#222">Reference: 0.5</text>
+<text x="68" y="806" font-size="10.5" fill="#222">Max Gain: 65536</text>
+<rect x="42" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="51" y="763" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="250" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="259" y="763" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="300" y="740" width="190" height="64" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="395" y="758" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Noise Gate</text>
+<text x="308" y="776" font-size="10.5" fill="#222">Threshold: -30 dB</text>
+<text x="308" y="791" font-size="10.5" fill="#222">Window: 480 samples</text>
+<rect x="282" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="291" y="763" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="490" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="499" y="763" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="540" y="740" width="190" height="64" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="635" y="758" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Envelope Follower</text>
+<text x="548" y="776" font-size="10.5" fill="#222">Time Const: 5 ms</text>
+<text x="548" y="791" font-size="10.5" fill="#222">Threshold: 0.003</text>
+<rect x="522" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="531" y="763" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="730" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="739" y="763" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="780" y="740" width="190" height="64" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="875" y="758" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Spectral Sub</text>
+<text x="788" y="776" font-size="10.5" fill="#222">Wiener-style gain</text>
+<text x="788" y="791" font-size="10.5" fill="#222">Tracks noise floor</text>
+<rect x="762" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="771" y="763" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="970" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="979" y="763" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="1020" y="740" width="190" height="64" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="1115" y="758" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Decimator</text>
+<text x="1028" y="776" font-size="10.5" fill="#222">IIR LPF: 4 kHz</text>
+<text x="1028" y="791" font-size="10.5" fill="#222">Soft 48k -&gt; 8k</text>
+<rect x="1002" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1011" y="763" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="1210" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1219" y="763" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="1260" y="740" width="190" height="64" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="1355" y="758" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Half Wave Rect</text>
+<text x="1268" y="776" font-size="10.5" fill="#222">Clips negatives to 0</text>
+<text x="1268" y="791" font-size="10.5" fill="#222">Halves ZCR</text>
+<rect x="1242" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1251" y="763" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="1450" y="752" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1459" y="763" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="60" y="920" width="190" height="64" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="155" y="938" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Schmitt</text>
+<text x="68" y="956" font-size="10.5" fill="#222">Hi / Lo: +0.01 / -0.01</text>
+<text x="68" y="971" font-size="10.5" fill="#222">Output: +/- 0.5</text>
+<rect x="42" y="932" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="51" y="943" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="250" y="932" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="259" y="943" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="300" y="920" width="190" height="64" rx="2" fill="#E2E2E2" stroke="#000000" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="395" y="938" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Hilbert Envelope</text>
+<text x="308" y="956" font-size="10.5" fill="#222">Env TC: 20 ms</text>
+<text x="308" y="971" font-size="10.5" fill="#222">Mean TC: 500 ms</text>
+<rect x="282" y="932" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="291" y="943" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="490" y="932" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="499" y="943" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="540" y="920" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="635" y="938" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Zero Cross Pulse</text>
+<text x="548" y="956" font-size="10.5" fill="#222">Sample Rate: 48k</text>
+<text x="548" y="971" font-size="10.5" fill="#222">Pulse Width: 100 µs</text>
+<text x="548" y="986" font-size="10.5" fill="#222">Output: 1.0 / 0.0</text>
+<rect x="522" y="932" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="531" y="943" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="730" y="932" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="739" y="943" font-size="8" fill="#111" text-anchor="middle">out</text>
+<text x="542" y="1013" font-size="10" font-style="italic" fill="#7A7A7A">one pulse per zero crossing</text>
+<rect x="780" y="920" width="190" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="875" y="938" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Multiply Const</text>
+<text x="788" y="956" font-size="10.5" fill="#222">ID: mult</text>
+<text x="788" y="971" font-size="10.5" fill="#222">Constant: 0.5 (1 mW)</text>
+<rect x="762" y="932" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="771" y="943" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="970" y="932" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="979" y="943" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="1020" y="920" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="1115" y="938" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Rational Resampler</text>
+<text x="1028" y="956" font-size="10.5" fill="#222">Interpolation: 125</text>
+<text x="1028" y="971" font-size="10.5" fill="#222">Decimation: 3</text>
+<text x="1028" y="986" font-size="10.5" fill="#222">Taps: boxcar</text>
+<rect x="1002" y="932" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1011" y="943" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="1210" y="932" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1219" y="943" font-size="8" fill="#111" text-anchor="middle">out</text>
+<text x="1022" y="1013" font-size="10" font-style="italic" fill="#7A7A7A">48 kHz -> 2 MHz</text>
+<rect x="1260" y="960" width="190" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="1355" y="978" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Probe Avg Mag^2</text>
+<text x="1268" y="996" font-size="10.5" fill="#222">ID: dc_probe</text>
+<text x="1268" y="1011" font-size="10.5" fill="#222">Alpha: 5e-5</text>
+<rect x="1242" y="972" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="1251" y="983" font-size="8" fill="#111" text-anchor="middle">in</text>
+<text x="1262" y="1038" font-size="10" font-style="italic" fill="#7A7A7A">duty cycle readout</text>
+<rect x="60" y="1100" width="190" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="155" y="1118" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Null Source</text>
+<text x="68" y="1136" font-size="10.5" fill="#222">Type: float</text>
+<text x="68" y="1151" font-size="10.5" fill="#222">Vec Length: 1</text>
+<rect x="250" y="1112" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="259" y="1123" font-size="8" fill="#111" text-anchor="middle">out</text>
+<text x="62" y="1178" font-size="10" font-style="italic" fill="#7A7A7A">Q channel = 0</text>
+<rect x="540" y="1100" width="190" height="64" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="635" y="1118" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Float To Complex</text>
+<text x="548" y="1136" font-size="10.5" fill="#222">Vec Length: 1</text>
+<text x="548" y="1151" font-size="10.5" fill="#222">I = pulse, Q = 0</text>
+<rect x="522" y="1112" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="531" y="1123" font-size="8" fill="#111" text-anchor="middle">in0</text>
+<rect x="522" y="1134" width="18" height="16" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="531" y="1145" font-size="8" fill="#111" text-anchor="middle">in1</text>
+<rect x="730" y="1112" width="18" height="16" fill="#3399FF" stroke="#000000" stroke-width="1"/>
+<text x="739" y="1123" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="780" y="1100" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="875" y="1118" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">Multiply Const</text>
+<text x="788" y="1136" font-size="10.5" fill="#222">ID: tx_gate</text>
+<text x="788" y="1151" font-size="10.5" fill="#222">Constant: 0+0j (TX off)</text>
+<text x="788" y="1166" font-size="10.5" fill="#222">Type: complex</text>
+<rect x="762" y="1112" width="18" height="16" fill="#3399FF" stroke="#000000" stroke-width="1"/>
+<text x="771" y="1123" font-size="8" fill="#111" text-anchor="middle">in</text>
+<rect x="970" y="1112" width="18" height="16" fill="#3399FF" stroke="#000000" stroke-width="1"/>
+<text x="979" y="1123" font-size="8" fill="#111" text-anchor="middle">out</text>
+<rect x="1020" y="1100" width="190" height="94" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="1115" y="1118" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">osmocom Sink</text>
+<text x="1028" y="1136" font-size="10.5" fill="#222">Device: hackrf=0</text>
+<text x="1028" y="1151" font-size="10.5" fill="#222">Sample Rate: 2M</text>
+<text x="1028" y="1166" font-size="10.5" fill="#222">Ch0 Freq: 1.3G</text>
+<text x="1028" y="1181" font-size="10.5" fill="#222">Ch0 IF / BB: 40 / 20</text>
+<rect x="1002" y="1112" width="18" height="16" fill="#3399FF" stroke="#000000" stroke-width="1"/>
+<text x="1011" y="1123" font-size="8" fill="#111" text-anchor="middle">in</text>
+<text x="1022" y="1208" font-size="10" font-style="italic" fill="#7A7A7A">425 MHz (70cm) or 1.3 GHz (23cm)</text>
+<rect x="780" y="1240" width="190" height="79" rx="2" fill="#F1F1F1" stroke="#000000" stroke-width="1.2"/>
+<text x="875" y="1258" font-size="12.5" font-weight="bold" fill="#111" text-anchor="middle">File Sink</text>
+<text x="788" y="1276" font-size="10.5" fill="#222">File: ~/OpenV2K_*.iq</text>
+<text x="788" y="1291" font-size="10.5" fill="#222">Type: complex</text>
+<text x="788" y="1306" font-size="10.5" fill="#222">Hot-swap: Null Sink</text>
+<rect x="762" y="1252" width="18" height="16" fill="#3399FF" stroke="#000000" stroke-width="1"/>
+<text x="771" y="1263" font-size="8" fill="#111" text-anchor="middle">in</text>
+<text x="782" y="1333" font-size="10" font-style="italic" fill="#7A7A7A">swapped in under lock()</text>
+<rect x="60" y="1215" width="640" height="118" rx="3" fill="#FBFBFB" stroke="#B0B0B0" stroke-width="1"/>
+<text x="72" y="1237" font-size="12" font-weight="bold" fill="#111">Legend</text>
+<rect x="74" y="1247" width="22" height="11" fill="#FF8C69" stroke="#000000" stroke-width="1"/>
+<text x="106" y="1255" font-size="10.5" fill="#222">Float 32 stream  (audio / pulse domain, 48 kHz)</text>
+<rect x="74" y="1262" width="22" height="11" fill="#3399FF" stroke="#000000" stroke-width="1"/>
+<text x="106" y="1270" font-size="10.5" fill="#222">Complex 64 stream  (IQ domain, 2 MHz)</text>
+<path d="M74,1282 L92,1282" stroke="#000000" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="106" y="1285" font-size="10.5" fill="#222">GNU Radio stream connection</text>
+<path d="M74,1297 L92,1297" stroke="#7A7A7A" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arg)"/>
+<text x="106" y="1300" font-size="10.5" fill="#222">External process, outside the flowgraph</text>
+<rect x="74" y="1307" width="22" height="11" fill="#E2E2E2" stroke="#000000" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="106" y="1315" font-size="10.5" fill="#222">Optional filter block, bypassed at startup</text>
+<text x="60" y="1355" font-size="10.5" font-style="italic" fill="#7A7A7A">Transcribed from OpenV2K160.py &#8212; _build_blocks() and _connect_blocks(). Qt GUI widgets, sliders and the eSpeak text path are not GNU Radio blocks and are shown only where they touch the graph.</text>
+</svg>
