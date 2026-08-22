@@ -25,7 +25,7 @@ There are four functional modes. The signal always logically flows from GUI top 
 <br>
 
 # GNU Radio Flowgraph: *Under the Hood*
-<img src="https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/OpenV2K160_flowgraph.svg"/>  
+<img src="https://github.com/OpenV2K/Sandbox/blob/main/Tutorial/OpenV2K160_flowgraph2.svg"/>  
 <br>
   
 # What This Actually Is, For a Home User
