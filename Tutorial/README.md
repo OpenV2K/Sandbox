@@ -17,7 +17,7 @@
   
 # GUI Introduction: *Understanding the Signal Chain*  
 When you generate a spectrogram, you're seeing what **would-have-been** output via SDR.  
-There are four functional modes. The signal always logically flows from GUI top to GUI bottom.  
+There are four functional modes. The signal always logically flows from GUI top to bottom.  
   
 | Input: eSpeak TTS,<br>Output: Generate Spectrogram                                                       | Input: Live Microphone,<br>Output: Generate Spectrogram                                                      | Input: eSpeak TTS,<br>Output: SDR Pulse Modulation                                                 | Input: Live Microphone,<br>Output: SDR Pulse Modulation                                                |
 |----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
