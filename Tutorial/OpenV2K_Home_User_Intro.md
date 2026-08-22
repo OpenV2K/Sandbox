@@ -7,7 +7,7 @@ OpenV2K is an open-source software application that converts arbitrary audio —
 For nearly everyone running this — which is exactly how it's meant to be used — OpenV2K is a thought experiment, not a demonstration. Generate a pulse burst from spoken audio, open the resulting spectrogram, and look at it: a clean, structured, audio-timed pulse pattern, visibly distinct. **No SDR needs to be attached** for this to be worth doing. The exercise is to look at that pattern and reason, about what pulse-modulated microwave energy carrying that same structure would represent.  
 Reflect on the [historical precedent of Sharp and Grove's 1975 feat](https://en.wikipedia.org/wiki/Signal_modulation#Miscellaneous_modulation_techniques), while using this software at home.  
   
-**Reproducing the actual microwave-auditory effect requires power levels, exposure control, dosimetry, and safety oversight this software does not provide and was never designed to provide.** That work belongs at PhD-staffed microwave exposure facilities with the instrumentation and institutional review to do it responsibly. OpenV2K's contribution stops at the waveform: a legitimate, inspectable, open-source answer to "what would the signal look like".  
+**Reproducing the actual microwave-auditory effect requires power levels, exposure control, dosimetry, and safety oversight.** That work belongs at PhD-staffed microwave exposure facilities with the instrumentation and institutional review to do it responsibly. OpenV2K's contribution stops at the waveform: a legitimate, inspectable, open-source answer to "what would the signal look like".  
   
 ## Five Disciplines, One Codebase
 
