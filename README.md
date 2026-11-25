@@ -1,6 +1,9 @@
 # Screencast Video Demo
 https://github.com/OpenV2K/Sandbox/raw/refs/heads/main/Video/Screencast%20From%202026-09-12%2016-41-07.webm
 
+# Ultrasonic Audio Laser Visualization
+Open `ultrasonic_audio_laser.html` in a browser for a self-contained simulation and live-microphone visualization. It does not transmit or emit ultrasonic audio.
+
 # Active Development, Project Log
   
 [![Version](https://img.shields.io/badge/OpenV2K_Milestone_Build-160-brightgreen.svg)](https://shields.io/)
