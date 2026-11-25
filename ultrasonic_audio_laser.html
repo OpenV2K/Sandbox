@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ultrasonic Audio Laser</title>
+  <style>
+    :root {
+      --ink: #dffcff;
+      --cyan: #79efff;
+      --blue: #4d9fff;
+      --violet: #9b7cff;
+      --panel: rgba(7, 16, 31, 0.84);
+      --line: rgba(121, 239, 255, 0.18);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow: hidden;
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 50% 56%, rgba(32, 95, 152, 0.18), transparent 24rem),
+        linear-gradient(135deg, #050913 0%, #09101c 55%, #060913 100%);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.28;
+      background-image:
+        linear-gradient(rgba(121, 239, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(121, 239, 255, 0.035) 1px, transparent 1px);
+      background-size: 38px 38px;
+      mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent);
+    }
+
+    .shell {
+      position: relative;
+      display: grid;
+      grid-template-columns: 235px minmax(380px, 1fr) 235px;
+      grid-template-rows: 74px 1fr;
+      gap: 12px;
+      width: 100vw;
+      height: 100vh;
+      padding: 12px;
+    }
+
+    header {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      border: 1px solid var(--line);
+      background: linear-gradient(90deg, rgba(7, 16, 31, 0.92), rgba(10, 24, 43, 0.72));
+      box-shadow: inset 0 1px rgba(255,255,255,0.025), 0 12px 40px rgba(0,0,0,0.22);
+    }
+
+    .title-wrap { display: flex; align-items: baseline; gap: 12px; }
+    h1 {
+      margin: 0;
+      font-size: 21px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 span { color: var(--cyan); }
+    .version {
+      color: #7d98ad;
+      font-family: monospace;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: #9bb8c8;
+      font: 11px monospace;
+      letter-spacing: 0.08em;
+    }
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #65ffd0;
+      box-shadow: 0 0 12px #65ffd0;
+    }
+
+    .panel {
+      min-height: 0;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: inset 0 1px rgba(255,255,255,0.025), 0 14px 34px rgba(0,0,0,0.18);
+    }
+
+    .left, .right {
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+    }
+
+    .section-title {
+      margin-bottom: 14px;
+      color: #86a1b4;
+      font: 10px monospace;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .control { margin-bottom: 16px; }
+    .control-head {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 7px;
+      color: #aec2ce;
+      font-size: 12px;
+    }
+    .control-value {
+      color: var(--cyan);
+      font-family: monospace;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      height: 3px;
+      appearance: none;
+      border-radius: 2px;
+      outline: none;
+      background: linear-gradient(90deg, var(--cyan) var(--fill, 50%), #26384a var(--fill, 50%));
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      width: 13px;
+      height: 13px;
+      appearance: none;
+      border: 2px solid #cfffff;
+      border-radius: 50%;
+      background: #55bdcf;
+      box-shadow: 0 0 12px rgba(121,239,255,0.7);
+      cursor: pointer;
+    }
+
+    button {
+      width: 100%;
+      min-height: 38px;
+      border: 1px solid rgba(121,239,255,0.26);
+      color: #b9dce5;
+      background: rgba(18, 38, 55, 0.78);
+      font: 11px monospace;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    button:hover { border-color: rgba(121,239,255,0.62); color: white; }
+    button.active {
+      border-color: var(--cyan);
+      color: #031319;
+      background: var(--cyan);
+      box-shadow: 0 0 18px rgba(121,239,255,0.28);
+    }
+
+    .mode-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
+    .viewport {
+      position: relative;
+      min-height: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background:
+        radial-gradient(circle at 50% 52%, rgba(73, 171, 209, 0.09), transparent 27%),
+        linear-gradient(rgba(6, 12, 23, 0.96), rgba(5, 10, 19, 0.98));
+    }
+
+    canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+    .reticle {
+      position: absolute;
+      left: 50%;
+      top: 52%;
+      width: 8px;
+      height: 8px;
+      transform: translate(-50%, -50%);
+      border: 1px solid rgba(174,248,255,0.72);
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(121,239,255,0.7);
+      pointer-events: none;
+    }
+
+    .readout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .metric {
+      min-height: 74px;
+      padding: 10px;
+      border: 1px solid rgba(121,239,255,0.10);
+      background: rgba(11, 28, 43, 0.62);
+    }
+    .metric-label {
+      color: #718e9e;
+      font: 9px monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .metric-value {
+      margin-top: 8px;
+      color: #cefaff;
+      font: 20px monospace;
+    }
+    .metric-unit { color: #7895a5; font-size: 10px; }
+
+    .scope {
+      position: relative;
+      height: 94px;
+      margin-top: 4px;
+      border: 1px solid rgba(121,239,255,0.10);
+      background: rgba(4, 12, 21, 0.88);
+    }
+    .scope canvas { width: 100%; height: 100%; }
+
+    .log {
+      flex: 1;
+      margin-top: 14px;
+      overflow: hidden;
+      border-top: 1px solid rgba(121,239,255,0.10);
+      color: #7895a5;
+      font: 10px/1.8 monospace;
+    }
+    .log-entry { white-space: nowrap; }
+    .log-entry::before { content: "> "; color: #4d9fff; }
+
+    .notice {
+      position: absolute;
+      left: 16px;
+      bottom: 14px;
+      z-index: 2;
+      max-width: 330px;
+      color: #7895a5;
+      font: 9px/1.5 monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    @media (max-width: 900px) {
+      body { overflow: auto; }
+      .shell {
+        grid-template-columns: 180px 1fr;
+        grid-template-rows: 74px 1fr;
+        min-height: 680px;
+        height: 100vh;
+      }
+      .right { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="title-wrap">
+        <h1>Ultrasonic <span>Audio Laser</span></h1>
+        <div class="version">VISUAL LAB // 001</div>
+      </div>
+      <div class="status"><span class="status-dot"></span><span id="statusText">SIMULATION IDLE</span></div>
+    </header>
+
+    <aside class="panel left">
+      <div class="section-title">Carrier parameters</div>
+      <div class="control">
+        <div class="control-head"><span>Frequency</span><span class="control-value" id="frequencyValue">28.0 kHz</span></div>
+        <input id="frequency" type="range" min="20" max="40" value="28" step="0.1">
+      </div>
+      <div class="control">
+        <div class="control-head"><span>Beam width</span><span class="control-value" id="widthValue">18 deg</span></div>
+        <input id="beamWidth" type="range" min="6" max="38" value="18" step="1">
+      </div>
+      <div class="control">
+        <div class="control-head"><span>Amplitude</span><span class="control-value" id="amplitudeValue">62%</span></div>
+        <input id="amplitude" type="range" min="10" max="100" value="62" step="1">
+      </div>
+      <div class="control">
+        <div class="control-head"><span>Pulse rate</span><span class="control-value" id="pulseValue">440 Hz</span></div>
+        <input id="pulseRate" type="range" min="20" max="1200" value="440" step="10">
+      </div>
+
+      <div class="section-title">Source</div>
+      <div class="mode-row">
+        <button id="synthMode" class="active" type="button">Synth</button>
+        <button id="micMode" type="button">Mic input</button>
+      </div>
+    </aside>
+
+    <section class="viewport" id="viewport">
+      <canvas id="beamCanvas"></canvas>
+      <div class="reticle"></div>
+      <div class="notice">Visualization only — no ultrasonic output is emitted</div>
+    </section>
+
+    <aside class="panel right">
+      <div class="section-title">Field telemetry</div>
+      <div class="readout">
+        <div class="metric">
+          <div class="metric-label">Carrier</div>
+          <div class="metric-value" id="carrierMetric">28.0</div>
+          <div class="metric-unit">kHz</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Intensity</div>
+          <div class="metric-value" id="intensityMetric">62</div>
+          <div class="metric-unit">percent</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Beam angle</div>
+          <div class="metric-value" id="angleMetric">18</div>
+          <div class="metric-unit">degrees</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Pulse</div>
+          <div class="metric-value" id="pulseMetric">440</div>
+          <div class="metric-unit">Hz</div>
+        </div>
+      </div>
+
+      <div class="section-title">Waveform</div>
+      <div class="scope"><canvas id="scopeCanvas"></canvas></div>
+      <div class="log" id="log">
+        <div class="log-entry">carrier lock acquired</div>
+        <div class="log-entry">modulator standing by</div>
+        <div class="log-entry">field renderer online</div>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    const beamCanvas = document.getElementById("beamCanvas");
+    const scopeCanvas = document.getElementById("scopeCanvas");
+    const beamContext = beamCanvas.getContext("2d");
+    const scopeContext = scopeCanvas.getContext("2d");
+    const viewport = document.getElementById("viewport");
+
+    const controls = {
+      frequency: document.getElementById("frequency"),
+      beamWidth: document.getElementById("beamWidth"),
+      amplitude: document.getElementById("amplitude"),
+      pulseRate: document.getElementById("pulseRate")
+    };
+
+    let running = true;
+    let micStream = null;
+    let micAnalyser = null;
+    let audioContext = null;
+    let micData = null;
+
+    function resizeCanvas(canvas) {
+      const rect = canvas.getBoundingClientRect();
+      const ratio = window.devicePixelRatio || 1;
+      canvas.width = Math.round(rect.width * ratio);
+      canvas.height = Math.round(rect.height * ratio);
+      const context = canvas.getContext("2d");
+      context.setTransform(ratio, 0, 0, ratio, 0, 0);
+      return rect;
+    }
+
+    function setRangeFill(input) {
+      const progress = (input.value - input.min) / (input.max - input.min) * 100;
+      input.style.setProperty("--fill", progress + "%");
+    }
+
+    function addLog(text) {
+      const log = document.getElementById("log");
+      const entry = document.createElement("div");
+      entry.className = "log-entry";
+      entry.textContent = text;
+      log.appendChild(entry);
+      while (log.children.length > 7) log.removeChild(log.firstElementChild);
+    }
+
+    function updateControls() {
+      Object.values(controls).forEach(setRangeFill);
+      const frequency = Number(controls.frequency.value);
+      const width = Number(controls.beamWidth.value);
+      const amplitude = Number(controls.amplitude.value);
+      const pulse = Number(controls.pulseRate.value);
+
+      document.getElementById("frequencyValue").textContent = frequency.toFixed(1) + " kHz";
+      document.getElementById("widthValue").textContent = width + " deg";
+      document.getElementById("amplitudeValue").textContent = amplitude + "%";
+      document.getElementById("pulseValue").textContent = pulse + " Hz";
+      document.getElementById("carrierMetric").textContent = frequency.toFixed(1);
+      document.getElementById("intensityMetric").textContent = amplitude;
+      document.getElementById("angleMetric").textContent = width;
+      document.getElementById("pulseMetric").textContent = pulse;
+    }
+
+    Object.values(controls).forEach(control => {
+      control.addEventListener("input", updateControls);
+    });
+
+    document.getElementById("synthMode").addEventListener("click", async () => {
+      document.getElementById("synthMode").classList.add("active");
+      document.getElementById("micMode").classList.remove("active");
+      document.getElementById("statusText").textContent = "SYNTHESIS ACTIVE";
+      if (micStream) {
+        micStream.getTracks().forEach(track => track.stop());
+        micStream = null;
+      }
+      micAnalyser = null;
+      micData = null;
+      addLog("synthetic source selected");
+    });
+
+    document.getElementById("micMode").addEventListener("click", async () => {
+      try {
+        micStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        audioContext = audioContext || new AudioContext();
+        const source = audioContext.createMediaStreamSource(micStream);
+        micAnalyser = audioContext.createAnalyser();
+        micAnalyser.fftSize = 512;
+        micData = new Uint8Array(micAnalyser.frequencyBinCount);
+        source.connect(micAnalyser);
+        document.getElementById("micMode").classList.add("active");
+        document.getElementById("synthMode").classList.remove("active");
+        document.getElementById("statusText").textContent = "MICROPHONE LIVE";
+        addLog("microphone field linked");
+      } catch (error) {
+        document.getElementById("statusText").textContent = "MIC INPUT BLOCKED";
+        addLog("microphone permission denied");
+      }
+    });
+
+    function drawBeam(time) {
+      const rect = resizeCanvas(beamCanvas);
+      const w = rect.width;
+      const h = rect.height;
+      const ctx = beamContext;
+      ctx.clearRect(0, 0, w, h);
+
+      const amplitude = Number(controls.amplitude.value) / 100;
+      const beamWidth = Number(controls.beamWidth.value);
+      const frequency = Number(controls.frequency.value);
+      const pulseRate = Number(controls.pulseRate.value);
+      const seconds = time * 0.001;
+      const micLevel = micAnalyser && micData ? getMicLevel() : 0;
+      const energy = micAnalyser ? 0.42 + micLevel * 0.9 : 0.38 + amplitude * 0.62;
+      const originX = w * 0.5;
+      const originY = h * 0.52;
+
+      ctx.save();
+      ctx.translate(originX, originY);
+      ctx.rotate(-Math.PI * 0.5);
+
+      const length = Math.min(w, h) * 0.82;
+      const spread = beamWidth / 38 * 80;
+      const pulse = 0.62 + 0.38 * Math.abs(Math.sin(seconds * pulseRate * 0.012));
+
+      const glow = ctx.createRadialGradient(0, -length * 0.3, 0, 0, -length * 0.3, length);
+      glow.addColorStop(0, "rgba(170, 246, 255, " + (0.20 * energy) + ")");
+      glow.addColorStop(0.35, "rgba(84, 192, 255, " + (0.10 * energy) + ")");
+      glow.addColorStop(1, "rgba(57, 113, 255, 0)");
+
+      ctx.beginPath();
+      ctx.moveTo(-spread * 0.18, 4);
+      ctx.quadraticCurveTo(-spread, -length * 0.18, -spread * 0.28, -length);
+      ctx.quadraticCurveTo(0, -length * 1.03, spread * 0.28, -length);
+      ctx.quadraticCurveTo(spread, -length * 0.18, spread * 0.18, 4);
+      ctx.closePath();
+      ctx.fillStyle = glow;
+      ctx.fill();
+
+      const beamGradient = ctx.createLinearGradient(0, 0, 0, -length);
+      beamGradient.addColorStop(0, "rgba(218, 254, 255, " + (0.85 * pulse * energy) + ")");
+      beamGradient.addColorStop(0.12, "rgba(121, 239, 255, " + (0.55 * energy) + ")");
+      beamGradient.addColorStop(0.72, "rgba(77, 159, 255, " + (0.16 * energy) + ")");
+      beamGradient.addColorStop(1, "rgba(155, 124, 255, 0)");
+
+      ctx.beginPath();
+      ctx.moveTo(-spread * 0.08, 4);
+      ctx.quadraticCurveTo(-spread * 0.25, -length * 0.38, -spread * 0.12, -length);
+      ctx.quadraticCurveTo(0, -length * 1.02, spread * 0.12, -length);
+      ctx.quadraticCurveTo(spread * 0.25, -length * 0.38, spread * 0.08, 4);
+      ctx.closePath();
+      ctx.fillStyle = beamGradient;
+      ctx.fill();
+
+      ctx.strokeStyle = "rgba(175, 248, 255, " + (0.64 * energy) + ")";
+      ctx.lineWidth = 1.2;
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.lineTo(0, -length);
+      ctx.stroke();
+
+      for (let i = 0; i < 9; i++) {
+        const y = -((i + 1) / 10) * length;
+        const phase = seconds * (2.4 + frequency * 0.025) + i * 0.72;
+        const bandWidth = spread * (0.12 + i * 0.09);
+        ctx.beginPath();
+        for (let x = -bandWidth; x <= bandWidth; x += 3) {
+          const curve = Math.sin(x * 0.09 + phase) * (1.5 + i * 0.16);
+          if (x === -bandWidth) ctx.moveTo(x, y + curve);
+          else ctx.lineTo(x, y + curve);
+        }
+        ctx.strokeStyle = "rgba(121, 239, 255, " + (0.08 + (9 - i) * 0.018) * energy + ")";
+        ctx.lineWidth = 0.7;
+        ctx.stroke();
+      }
+      ctx.restore();
+
+      ctx.save();
+      ctx.translate(originX, originY);
+      const ringCount = 5;
+      for (let i = 0; i < ringCount; i++) {
+        const radius = 26 + i * 16 + ((seconds * 18 + i * 5) % 18);
+        ctx.beginPath();
+        ctx.arc(0, 0, radius, 0, Math.PI * 2);
+        ctx.strokeStyle = "rgba(121, 239, 255, " + (0.12 - i * 0.014) * energy + ")";
+        ctx.lineWidth = 0.7;
+        ctx.stroke();
+      }
+      ctx.restore();
+
+      drawGrid(ctx, w, h);
+    }
+
+    function drawGrid(ctx, w, h) {
+      ctx.save();
+      ctx.strokeStyle = "rgba(121, 239, 255, 0.035)";
+      ctx.lineWidth = 1;
+      for (let x = 0; x < w; x += 38) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, h);
+        ctx.stroke();
+      }
+      for (let y = 0; y < h; y += 38) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(w, y);
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    function getMicLevel() {
+      if (!micAnalyser || !micData) return 0;
+      micAnalyser.getByteFrequencyData(micData);
+      let sum = 0;
+      for (let i = 0; i < micData.length; i++) sum += micData[i];
+      return sum / micData.length / 255;
+    }
+
+    function drawScope(time) {
+      const rect = resizeCanvas(scopeCanvas);
+      const w = rect.width;
+      const h = rect.height;
+      const ctx = scopeContext;
+      ctx.clearRect(0, 0, w, h);
+      ctx.strokeStyle = "rgba(121, 239, 255, 0.08)";
+      ctx.lineWidth = 1;
+      for (let x = 0; x < w; x += 20) {
+        ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+      }
+      for (let y = 0; y < h; y += 18) {
+        ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+      }
+
+      ctx.beginPath();
+      const pulse = Number(controls.pulseRate.value);
+      const amplitude = Number(controls.amplitude.value) / 100;
+      const micLevel = micAnalyser && micData ? getMicLevel() : 0;
+      for (let x = 0; x < w; x++) {
+        const phase = x / w * Math.PI * 8;
+        const envelope = micAnalyser ? 0.45 + micLevel : 0.55 + amplitude * 0.5;
+        const carrier = Math.sin(phase * (1 + pulse / 900) + time * 0.006);
+        const modulation = Math.sin(phase * 0.38 + time * 0.002);
+        const y = h * 0.5 + carrier * modulation * 18 * envelope;
+        if (x === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = "#79efff";
+      ctx.lineWidth = 1.2;
+      ctx.shadowBlur = 8;
+      ctx.shadowColor = "#79efff";
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+    }
+
+    function animate(time) {
+      if (running) {
+        drawBeam(time);
+        drawScope(time);
+      }
+      requestAnimationFrame(animate);
+    }
+
+    updateControls();
+    requestAnimationFrame(animate);
+
+    window.addEventListener("resize", () => {
+      resizeCanvas(beamCanvas);
+      resizeCanvas(scopeCanvas);
+    });
+  </script>
+</body>
+</html>
